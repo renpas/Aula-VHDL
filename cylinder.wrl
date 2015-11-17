@@ -1,0 +1,21 @@
+#VRML V2.0 utf8
+# Programa Cylinder.wrl
+# Um canudinho verde com lateral, vazado no centro
+
+Shape
+{
+	appearance Appearance
+	{
+		material Material
+		{
+			diffuseColor 0 1 0
+		}
+	}
+	geometry Cylinder{
+			radius 0.5
+			height 4
+			side TRUE
+			top FALSE
+			bottom FALSE
+		    }
+}

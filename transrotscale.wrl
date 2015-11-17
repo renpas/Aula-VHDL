@@ -1,0 +1,37 @@
+#VRML V2.0 utf8
+# transrotscale.wrl
+# Exemplo de translação, rotação e escala juntos
+
+Shape
+{
+	appearance Appearance
+	{ material Material { diffuseColor 0 0 1 } }
+	geometry Cylinder { 
+				height 4
+				radius 0.5
+			}
+}
+
+Transform
+{
+	translation 2 2 2
+	rotation 3 2.0 2.0 3.14
+	scale 1 1.2 1
+	children [
+		Shape
+		{
+			appearance Appearance
+			{ material Material
+				{
+					diffuseColor 0 1 1
+				}
+			
+			}
+			
+			geometry Cylinder{
+					height 4
+					radius 0.5
+			}
+		}
+	]
+}
